@@ -1,6 +1,9 @@
 //ativdade de TP-16/09/25
-//CODIGO DA QUESTAO 1 COMEÇA NA LINHA: 18
-//CODIGO DA QUESTAO 2 COMEÇA NA LINHA: 45
+// -Estrutura Sequencial-
+//CODIGO DA QUESTAO 1 COMEÇA NA LINHA: 22
+//CODIGO DA QUESTAO 2 COMEÇA NA LINHA: 47
+//CODIGO DA QUESTAO 3 COMEÇA NA LINHA: 69
+//CODIGO DA QUESTAO 4 COMEÇA NA LINHA: .....
 
 //eu ia usar esse codigo ate ver que tinha que "apresentar o resultado mostrando os números digitados"
 
@@ -14,7 +17,8 @@ int num1, num2, soma, produto;
      printf("soma: " "%i\n", num1+num2 );
      printf("produto: " "%i\n", num1*num2 );
 
-//////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//OPERAÇOES BASICAS
 #include <stdio.h>
 
 int main()
@@ -32,14 +36,14 @@ int num1, num2;
 
     return 0;
 }
-////////////////
-oq esse %.1f faz?
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//oq esse %.1f faz?
 -%: Indica que um especificador de formato está começando.
 
 -.1: É a precisão. O número 1 após o ponto (.) informa que você quer exibir o resultado com exatamente uma casa decimal.
 
 -f: Indica que o tipo de dado a ser formatado é um número de ponto flutuante (do inglês, float).
-
+//CODIGO DA MEDIA
 #include <stdio.h>
 
 int main()
@@ -60,4 +64,67 @@ printf ("A media entre %.1f e %.1f e %.1f.\n", num1, num2, media);
     return 0;
 }
 
-////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//CODIGO DE SUCESSOR E ANTECESSOR
+#include <stdio.h>
+
+int main()
+{
+int numero;
+
+ printf("digite o PRIMEIRO numero: ");
+    scanf("%d",&numero);
+
+    int antecessor = numero -1;
+    int sucessor = numero +1;
+
+    printf("o numero digitado e: %d. sucessor: %d. antecessor: %d.", numero, sucessor, antecessor );
+
+    return 0;
+}
+//Depois de fazer esse cod eu perecebi que e chato ter que ficar repetindo esse negocio de gcc so pra fazer ele rodar denovo, então eu fui buscar uma forma fazer o programa perguntar se eu queria fazer rodar dnv
+//eu lembrei das funçoes char, do, while
+//DO = FAZER
+//WHILE = ENQUANTO
+
+#include <stdio.h>
+
+int main() {
+    int numero;
+    char continuar;
+
+    do {
+        printf("Digite um numero inteiro: ");
+        scanf("%d", &numero);
+
+        int sucessor = numero + 1;
+        int antecessor = numero - 1;
+
+        printf("Numero digitado: %d. Sucessor: %d. Antecessor: %d.\n", numero, sucessor, antecessor);
+
+        printf("Quer continuar? (s/n): ");
+        scanf(" %c", &continuar); // O espaco antes do %c eh importante para ignorar o 'enter' anterior
+
+    } while (continuar == 's' || continuar == 'S');
+
+    printf("Fim do programa.\n");
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------
+-char continuar;:  Declaramos uma variável do tipo char para guardar a resposta do usuário ('s' ou 'n').
+
+-do { ... } while (continuar == 's' || continuar == 'S');:  Este é o loop.
+
+-O código dentro das chaves {} é executado.
+
+-No final, o programa pergunta ao usuário se ele quer continuar.
+
+-A condição (continuar == 's' || continuar == 'S') verifica se a variável continuar é igual a 's' (minúsculo) ou 'S' (maiúsculo). Se a condição for verdadeira, o loop se repete. Caso contrário, o loop termina e o programa exibe a mensagem "Fim do programa."
+
+Dessa forma, o programa só para quando o usuário digita 'n' ou qualquer outra coisa que não seja 's' ou 'S'.
+-----------------------------------------------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
