@@ -4,9 +4,12 @@ int main()
 int numA = 6, numB = 6;
  printf("%i", numA+numB); //comando de saída
 
+///////////
+
 float numA = 13, numB = 2;
  printf("%.2f / %.2f = %.2f", numA, numB, numA/numB); 
 
+//////////
 
  int numA, numB;
     printf("digite o 1° numero: ");
