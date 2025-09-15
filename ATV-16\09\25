@@ -1,5 +1,18 @@
 //ativdade de TP-16/09/25
+//CODIGO DA QUESTAO 1 COMEÇA NA LINHA: 16
+//eu ia usar esse codigo ate ver que tinha que "apresentar o resultado mostrando os números digitados"
 
+int num1, num2, soma, produto;
+    printf("digite o PRIMEIRO numero: ");
+    scanf("%i",&num1);
+    
+    printf("digite o SEGUNDO numero: ");
+    scanf("%i",&num2);
+
+     printf("soma: " "%i\n", num1+num2 );
+     printf("produto: " "%i\n", num1*num2 );
+
+//////////////////
 #include <stdio.h>
 
 int main()
