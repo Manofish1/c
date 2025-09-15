@@ -1,0 +1,19 @@
+//ativdade de TP-16/09/25
+
+#include <stdio.h>
+
+int main()
+{
+int num1, num2;
+
+    printf("Digite o PRIMEIRO numero: ");
+    scanf("%i", &num1);
+    
+    printf("Digite o SEGUNDO numero: ");
+    scanf("%i", &num2);
+
+    printf("Soma: %d + %d = %d\n", num1, num2, num1 + num2);
+    printf("Produto: %d * %d = %d\n", num1, num2, num1 * num2);
+
+    return 0;
+}
