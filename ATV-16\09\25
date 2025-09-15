@@ -3,7 +3,7 @@
 //CODIGO DA QUESTAO 1 COMEÇA NA LINHA: 22
 //CODIGO DA QUESTAO 2 COMEÇA NA LINHA: 47
 //CODIGO DA QUESTAO 3 COMEÇA NA LINHA: 69
-//CODIGO DA QUESTAO 4 COMEÇA NA LINHA: .....
+//CODIGO DA QUESTAO 4 COMEÇA NA LINHA: 130
 
 //eu ia usar esse codigo ate ver que tinha que "apresentar o resultado mostrando os números digitados"
 
@@ -125,6 +125,20 @@ int main() {
 Dessa forma, o programa só para quando o usuário digita 'n' ou qualquer outra coisa que não seja 's' ou 'S'.
 -----------------------------------------------------------------------------------------------------------------
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
+//POTENCIAÇAO
+// sente a potencia BB KKKKKK
+#include <stdio.h>
+
+int main() {
+    int numero;
+    int resultado;
+
+     printf("digite um numero inteiro: ");
+    scanf("%d",&numero);
+
+    printf("O numero %d elevado a 2 e %d.\n", numero, resultado, resultado = numero * numero);
+    return 0;
+}
 
 
 
