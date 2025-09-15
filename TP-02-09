@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main()
+{
 
 int numA = 6, numB = 6;
  printf("%i", numA+numB); //comando de saída
@@ -19,3 +20,4 @@ float numA = 13, numB = 2;
     scanf("%i",&numB);
 
     return 0;
+}
