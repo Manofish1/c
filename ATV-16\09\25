@@ -1,5 +1,7 @@
 //ativdade de TP-16/09/25
-//CODIGO DA QUESTAO 1 COMEÇA NA LINHA: 16
+//CODIGO DA QUESTAO 1 COMEÇA NA LINHA: 18
+//CODIGO DA QUESTAO 2 COMEÇA NA LINHA: 45
+
 //eu ia usar esse codigo ate ver que tinha que "apresentar o resultado mostrando os números digitados"
 
 int num1, num2, soma, produto;
@@ -30,3 +32,32 @@ int num1, num2;
 
     return 0;
 }
+////////////////
+oq esse %.1f faz?
+-%: Indica que um especificador de formato está começando.
+
+-.1: É a precisão. O número 1 após o ponto (.) informa que você quer exibir o resultado com exatamente uma casa decimal.
+
+-f: Indica que o tipo de dado a ser formatado é um número de ponto flutuante (do inglês, float).
+
+#include <stdio.h>
+
+int main()
+{
+float  num1;
+float  num2;
+
+printf("Digite o PRIMEIRO numero: ");
+    scanf("%f", &num1);
+    
+    printf("Digite o SEGUNDO numero: ");
+    scanf("%f", &num2);
+
+    float media = (num1 + num2) / 2.0;
+    
+printf ("A media entre %.1f e %.1f e %.1f.\n", num1, num2, media);
+
+    return 0;
+}
+
+////////////
