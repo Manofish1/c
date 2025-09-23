@@ -1,8 +1,15 @@
 #include <stdio.h>
 int main() {
 int num;
-printf ("digite um numero");
-scanf ("%i, &num
-
+printf ("digite um numero: ");
+scanf ("%i, &num);
+if (num > 21){
+printf ("maior que 21");
+}
+if (num < 21){
+printf ("menor que 21");
+}
+if (num == 21){
+printf ("igual a 21");
 return 0; 
 }
