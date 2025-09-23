@@ -1,1 +1,12 @@
-
+#include <stdio.h>
+int main() {
+int num;
+printf ("digite um numero: ");
+scanf ("%i, &num);
+if (num > 21){
+printf ("maior que 21");
+}
+else{
+printf("igual ou menor a 21");
+}
+return 0;
